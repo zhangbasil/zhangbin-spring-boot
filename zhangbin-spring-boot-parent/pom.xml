@@ -17,17 +17,18 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <disable.checks>true</disable.checks>
     </properties>
 
 
     <distributionManagement>
         <repository>
-            <id>nexus-releases</id>
+            <id>releases</id>
             <name>Nexus Release Repository</name>
             <url>http://106.15.187.68:8088/nexus/content/repositories/releases</url>
         </repository>
         <snapshotRepository>
-            <id>nexus-snapshots</id>
+            <id>snapshots</id>
             <name>Nexus Snapshot Repository</name>
             <url>http://106.15.187.68:8088/nexus/content/repositories/snapshots</url>
         </snapshotRepository>

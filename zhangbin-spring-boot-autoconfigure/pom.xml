@@ -6,14 +6,12 @@
 
     <parent>
         <groupId>com.zhangbin.spring.boot</groupId>
-        <artifactId>zhangbin-spring-boot</artifactId>
+        <artifactId>zhangbin-spring-boot-parent</artifactId>
         <relativePath>../zhangbin-spring-boot-parent</relativePath>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>zhangbin-spring-boot-autoconfigure</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
 
-    
 </project>
