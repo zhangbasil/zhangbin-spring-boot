@@ -5,32 +5,25 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-parent</artifactId>
-        <version>1.5.8.RELEASE</version>
+        <groupId>com.zhangbin.spring.boot</groupId>
+        <artifactId>zhangbin-spring-boot</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.zhangbin.spring.boot</groupId>
     <artifactId>zhangbin-spring-boot-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <properties>
-        <java.version>1.8</java.version>
-        <disable.checks>true</disable.checks>
-    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>1.5.8.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
-
-    <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <name>Nexus Release Repository</name>
-            <url>http://maven.qlhts.cn:9276/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <name>Nexus Snapshot Repository</name>
-            <url>http://maven.qlhts.cn:9276/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
 </project>
