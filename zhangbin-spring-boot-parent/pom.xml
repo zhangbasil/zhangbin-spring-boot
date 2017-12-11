@@ -19,14 +19,13 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>1.5.8.RELEASE</version>
+                <version>${spring.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
-        <!-- Turn on filtering by default for application properties -->
         <resources>
             <resource>
                 <directory>${basedir}/src/main/resources</directory>
@@ -48,7 +47,6 @@
         </resources>
         <pluginManagement>
             <plugins>
-                <!-- Apply more sensible defaults for user projects -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
@@ -67,7 +65,6 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <!--<mainClass>${start-class}</mainClass>-->
                                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                             </manifest>
                         </archive>
@@ -80,9 +77,8 @@
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                         <archive>
                             <manifest>
-                                <!--<mainClass>${start-class}</mainClass>-->
                                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                                <!--<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>-->
+                                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                             </manifest>
                         </archive>
                     </configuration>
@@ -90,9 +86,6 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>exec-maven-plugin</artifactId>
-                    <!--<configuration>-->
-                        <!--<mainClass>${start-class}</mainClass>-->
-                    <!--</configuration>-->
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -125,6 +118,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring.boot.version}</version>
                     <executions>
                         <execution>
                             <goals>
@@ -132,9 +126,6 @@
                             </goals>
                         </execution>
                     </executions>
-                    <!--<configuration>-->
-                        <!--<mainClass>${start-class}</mainClass>-->
-                    <!--</configuration>-->
                 </plugin>
 
             </plugins>
