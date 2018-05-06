@@ -3,10 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!--<parent>-->
+        <!--<groupId>com.zhangbin.rootpom</groupId>-->
+        <!--<artifactId>rootpom</artifactId>-->
+        <!--<version>0.0.1-SNAPSHOT</version>-->
+    <!--</parent>-->
+
     <parent>
-        <groupId>com.zhangbin.rootpom</groupId>
-        <artifactId>rootpom</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.1.RELEASE</version>
     </parent>
 
     <groupId>com.zhangbin.spring.boot</groupId>
@@ -19,4 +25,39 @@
         <module>zhangbin-spring-boot-autoconfigure</module>
         <module>zhangbin-spring-boot-starters</module>
     </modules>
+
+    <profiles>
+        <profile>
+            <id>maven-public</id>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>http://106.15.187.68:9276/repository/maven-public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <!--<properties>-->
+            <!--<project.release.version>-SNAPSHOT</project.release.version>-->
+            <!--</properties>-->
+        </profile>
+    </profiles>
+
+    <distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <name>Nexus Release Repository</name>
+            <url>http://106.15.187.68:9276/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>http://106.15.187.68:9276/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>
