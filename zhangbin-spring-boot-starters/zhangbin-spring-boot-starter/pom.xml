@@ -6,19 +6,19 @@
 
     <parent>
         <groupId>com.zhangbin.spring.boot</groupId>
-        <artifactId>zhangbin-spring-boot-parent</artifactId>
-        <relativePath>../zhangbin-spring-boot-parent</relativePath>
+        <artifactId>zhangbin-spring-boot-starters</artifactId>
         <version>0.0.3-SNAPSHOT</version>
     </parent>
 
-    <artifactId>zhangbin-spring-boot-starters</artifactId>
+    <artifactId>zhangbin-spring-boot-starter</artifactId>
     <version>0.0.3-SNAPSHOT</version>
-    <packaging>pom</packaging>
 
-    <modules>
-        <module>zhangbin-spring-boot-starter</module>
-        <module>zhangbin-spring-boot-starter-lock</module>
-        <module>zhangbin-spring-boot-starter-web</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>com.zhangbin.spring.boot</groupId>
+            <artifactId>zhangbin-spring-boot-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
 
+    
 </project>

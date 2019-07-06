@@ -7,49 +7,85 @@
     <parent>
         <groupId>com.zhangbin.spring.boot</groupId>
         <artifactId>zhangbin-spring-boot</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+        <version>0.0.3-SNAPSHOT</version>
     </parent>
 
     <artifactId>zhangbin-spring-boot-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
-        <dubbo.version>2.6.1</dubbo.version>
-        <dubbo-spring-boot-starter.version>0.2.0</dubbo-spring-boot-starter.version>
+        <zhangbin-spring-boot.version>0.0.3-SNAPSHOT</zhangbin-spring-boot.version>
+        <zhangbin-conventon.version>0.0.2-SNAPSHOT</zhangbin-conventon.version>
+
+        <dubbo.version>2.7.1</dubbo.version>
+
         <druid-spring-boot-starter.version>1.1.9</druid-spring-boot-starter.version>
 
-        <pagehelper.version>5.1.2</pagehelper.version>
-        <pagehelper-spring-boot-starter.version>1.2.3</pagehelper-spring-boot-starter.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.alibaba</groupId>
+                <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>${dubbo.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alibaba.boot</groupId>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-dependencies-zookeeper</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
-                <version>${dubbo-spring-boot-starter.version}</version>
+                <version>${dubbo.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid-spring-boot-starter.version}</version>
             </dependency>
+
             <dependency>
-                <groupId>com.github.pagehelper</groupId>
-                <artifactId>pagehelper</artifactId>
-                <version>${pagehelper.version}</version>
+                <groupId>com.zhangbin.spring.boot</groupId>
+                <artifactId>zhangbin-spring-boot-starter</artifactId>
+                <version>${zhangbin-spring-boot.version}</version>
+            </dependency>
+
+            <!-- autoconfigure-->
+            <dependency>
+                <groupId>com.zhangbin.spring.boot</groupId>
+                <artifactId>zhangbin-spring-boot-autoconfigure</artifactId>
+                <version>${zhangbin-spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.zhangbin.convention</groupId>
+                <artifactId>zhangbin-convention-service</artifactId>
+                <version>${zhangbin-conventon.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.github.pagehelper</groupId>
-                <artifactId>pagehelper-spring-boot-starter</artifactId>
-                <version>${pagehelper-spring-boot-starter.version}</version>
+                <groupId>com.zhangbin.convention</groupId>
+                <artifactId>zhangbin-convention-web</artifactId>
+                <version>${zhangbin-conventon.version}</version>
             </dependency>
+
+            <!-- starter-web -->
+            <dependency>
+                <groupId>com.zhangbin.spring.boot</groupId>
+                <artifactId>zhangbin-spring-boot-starter-web</artifactId>
+                <version>${zhangbin-spring-boot.version}</version>
+            </dependency>
+            <!-- 分布式锁 -->
+            <dependency>
+                <groupId>com.zhangbin.spring.boot</groupId>
+                <artifactId>zhangbin-spring-boot-starter-lock</artifactId>
+                <version>${zhangbin-spring-boot.version}</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 
