@@ -1,7 +1,6 @@
 package com.zhangbin.spring.boot.autoconfigure.alarm;
 
-import com.zhangbin.convention.aop.exception.ExceptionAlarmHandler;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import com.zhangbin.specification.handler.ExceptionAlarmHandler;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.Configuration;
 

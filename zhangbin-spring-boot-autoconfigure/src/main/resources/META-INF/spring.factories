@@ -1,6 +1,7 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.zhangbin.spring.boot.autoconfigure.convention.ServiceAutoConfiguration,\
-  com.zhangbin.spring.boot.autoconfigure.convention.WebAutoConfiguration,\
+  com.zhangbin.spring.boot.autoconfigure.specification.ServiceAutoConfiguration,\
+  com.zhangbin.spring.boot.autoconfigure.specification.WebAutoConfiguration,\
   com.zhangbin.spring.boot.autoconfigure.lock.RedisLockAutoConfiguration,\
   com.zhangbin.spring.boot.autoconfigure.lock.ZookeeperLockAutoConfiguration,\
-  com.zhangbin.spring.boot.autoconfigure.alarm.AlarmAutoConfiguration
+  com.zhangbin.spring.boot.autoconfigure.alarm.AlarmAutoConfiguration,\
+  com.zhangbin.spring.boot.autoconfigure.swagger.SwaggerAutoConfiguration

@@ -17,11 +17,13 @@
 
     <properties>
         <zhangbin-spring-boot.version>0.0.3-SNAPSHOT</zhangbin-spring-boot.version>
-        <zhangbin-conventon.version>0.0.2-SNAPSHOT</zhangbin-conventon.version>
+        <zhangbin-specification.version>0.0.6-SNAPSHOT</zhangbin-specification.version>
 
         <dubbo.version>2.7.1</dubbo.version>
 
         <druid-spring-boot-starter.version>1.1.9</druid-spring-boot-starter.version>
+
+        <swagger2.version>2.9.2</swagger2.version>
 
     </properties>
 
@@ -62,14 +64,14 @@
             </dependency>
 
             <dependency>
-                <groupId>com.zhangbin.convention</groupId>
-                <artifactId>zhangbin-convention-service</artifactId>
-                <version>${zhangbin-conventon.version}</version>
+                <groupId>com.zhangbin.specification</groupId>
+                <artifactId>zhangbin-specification-service</artifactId>
+                <version>${zhangbin-specification.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zhangbin.convention</groupId>
-                <artifactId>zhangbin-convention-web</artifactId>
-                <version>${zhangbin-conventon.version}</version>
+                <groupId>com.zhangbin.specification</groupId>
+                <artifactId>zhangbin-specification-web</artifactId>
+                <version>${zhangbin-specification.version}</version>
             </dependency>
 
             <!-- starter-web -->
@@ -84,6 +86,25 @@
                 <artifactId>zhangbin-spring-boot-starter-lock</artifactId>
                 <version>${zhangbin-spring-boot.version}</version>
             </dependency>
+
+            <!--    swagger    -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.zhangbin.spring.boot</groupId>
+                <artifactId>zhangbin-spring-boot-starter-swagger</artifactId>
+                <version>${zhangbin-spring-boot.version}</version>
+            </dependency>
+
 
 
         </dependencies>

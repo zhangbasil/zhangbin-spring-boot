@@ -9,8 +9,8 @@
         <artifactId>zhangbin-spring-boot-starters</artifactId>
         <version>0.0.3-SNAPSHOT</version>
     </parent>
-
-    <artifactId>zhangbin-spring-boot-starter-web</artifactId>
+    
+    <artifactId>zhangbin-spring-boot-starter-swagger</artifactId>
     <version>0.0.3-SNAPSHOT</version>
 
     <dependencies>
@@ -19,16 +19,12 @@
             <artifactId>zhangbin-spring-boot-starter</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.zhangbin.specification</groupId>
-            <artifactId>zhangbin-specification-web</artifactId>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jetty</artifactId>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
         </dependency>
     </dependencies>
 

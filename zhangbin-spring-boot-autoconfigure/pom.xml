@@ -33,19 +33,30 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- convention -->
+        <!-- specification -->
         <dependency>
-            <groupId>com.zhangbin.convention</groupId>
-            <artifactId>zhangbin-convention-service</artifactId>
+            <groupId>com.zhangbin.specification</groupId>
+            <artifactId>zhangbin-specification-service</artifactId>
             <optional>true</optional>
         </dependency>
 
         <dependency>
-            <groupId>com.zhangbin.convention</groupId>
-            <artifactId>zhangbin-convention-web</artifactId>
+            <groupId>com.zhangbin.specification</groupId>
+            <artifactId>zhangbin-specification-web</artifactId>
             <optional>true</optional>
         </dependency>
 
+        <!--    swagger    -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <optional>true</optional>
+        </dependency>
 
     </dependencies>
 

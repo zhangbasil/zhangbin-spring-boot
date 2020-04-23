@@ -7,10 +7,6 @@ import java.lang.annotation.Target;
 
 /**
  * @author zhangbin
- * @Type EnableRedisLock
- * @Desc
- * @date 2018-12-05
- * @Version V1.0
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
