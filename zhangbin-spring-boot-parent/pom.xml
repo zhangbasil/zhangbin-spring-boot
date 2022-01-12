@@ -19,7 +19,7 @@
         <zhangbin-spring-boot.version>0.0.3-SNAPSHOT</zhangbin-spring-boot.version>
         <zhangbin-specification.version>0.0.6-SNAPSHOT</zhangbin-specification.version>
 
-        <dubbo.version>2.7.1</dubbo.version>
+        <dubbo.version>2.7.15</dubbo.version>
 
         <druid-spring-boot-starter.version>1.1.9</druid-spring-boot-starter.version>
 
